@@ -1,0 +1,9 @@
+# SELECT PYTHON IMAGE
+FROM python:3.6
+
+# ADDING TO WORKING DOCKER DIRECTORY
+ADD . /app
+WORKDIR /app
+
+# INSTALLING REQUIREMENTS
+RUN pip install -r requirements.txt
